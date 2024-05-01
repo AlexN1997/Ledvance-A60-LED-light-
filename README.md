@@ -21,32 +21,32 @@ Ledvance Classic Filament A60 LED light (AC32956) uses there own (closed) softwa
 
 **This code works (ON/OFF and adjusting brightness), but need some tweaks:**
 
-> esphome:
-  name: ledvance-test1
-  friendly_name: Ledvance Test#1
-bk72xx:
-  board: generic-bk7231t-qfn32-tuya
-logger:
-web_server:
-captive_portal:
-mdns:
-api:
-ota:
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  ap:
-text_sensor:
->  - platform: libretiny
-    version:
-      name: LibreTiny Version
-output:
->  - platform: ledc
-    id: output_cold
-    pin: P26
-light:
->  - platform: monochromatic
-    id: light_monochromatic
-    name: Light
-    output: output_cold
-    restore_mode: RESTORE_DEFAULT_OFF
+> esphome: <br>
+  name: Insert name <br>
+  friendly_name: Insert name <br>
+bk72xx: <br>
+  board: generic-bk7231t-qfn32-tuya <br>
+logger: <br>
+web_server: <br>
+captive_portal: <br>
+mdns: <br>
+api: <br>
+ota: <br>
+wifi: <br>
+  ssid: !secret wifi_ssid <br>
+  password: !secret wifi_password <br>
+  ap: <br>
+text_sensor: <br>
+  platform: libretiny <br>
+    version: <br>
+      name: LibreTiny Version <br>
+ output: <br>
+  platform: ledc <br>
+    id: output_cold <br>
+    pin: P26 <br>
+ light: <br>
+  platform: monochromatic <br>
+    id: light_monochromatic <br>
+    name: Light <br>
+    output: output_cold <br>
+     restore_mode: RESTORE_DEFAULT_OFF
